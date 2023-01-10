@@ -1,0 +1,177 @@
+
+.cocktails-main-container {
+    /* display: flex; */
+    flex-wrap: wrap;
+    background: #ebebf6;
+    transition: all 0.15s ease-in-out 0s;
+    opacity: 1;
+    overflow: hidden auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 200vh;
+    }
+  .cocktail-container-top {
+    
+    display: flex;
+   
+    background-color: transparent;
+    color: white;
+    text-shadow:gray;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 5em;
+    background: linear-gradient(160deg, #213393 40%, #6eb3e8 60%, #056aee 96%);
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 5em;
+    font-weight: 5em;
+    letter-spacing: .07em;
+  }
+  .cocktail-container-buttom {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #ebebf6;
+    justify-content: center;
+    background-size:contain;
+    height: 200rem;
+    
+  }
+  .header-cocktail-img{
+    
+  }
+  .drink-select-option {
+    width: 80em;
+    height:5em;
+    padding-top: 3em;
+    color:#05097e;
+    justify-content: center;
+    
+    font-family: cursive;
+   
+
+  }
+  .cocktails-small-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .cocktails-details {
+    width: 200px;
+    height: 200px;
+  }
+  .cocktails-image {
+    display: flex;
+    flex-wrap: wrap;
+   
+  }
+  
+  .drink-detail-container {
+ 
+  
+    background-color: #ebebf6;
+    justify-content: center;
+    background-size:contain;
+    height: 200rem;
+  }
+  .drink-detail-word{
+    
+    display: flex;
+   
+    background-color: transparent;
+    color: white;
+    text-shadow:gray;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 5em;
+    background: linear-gradient(160deg, #213393 40%, #6eb3e8 60%, #056aee 96%);
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 5em;
+    font-weight: 5em;
+    letter-spacing: .07em;
+  }
+  
+  .drink-detail-small-container {
+    border: 5px solid rgb(191, 142, 207);
+    border-radius: 15px;
+    margin-top: 5em;
+    width: 100em;
+    height: 100em;
+    font-family: cursive;
+color: #032d7a;
+background-color:#ebebf6;
+margin-left: 35%;
+
+
+  }
+  
+ 
+  Select {
+    color: rgb(174, 198, 17);
+    height: 30em;
+  }
+ 
+ 
+  .cocktail-button {
+  
+    margin-top: 15em;
+      appearance: none;
+      background-color: #FFFFFF;
+      border-radius: 40em;
+      border-style: none;
+      box-shadow: #625dd0 0 -12px 6px inset;
+      box-sizing: border-box;
+      color: #1c0566;
+      cursor: pointer;
+      display: inline-block;
+      font-family: -apple-system,sans-serif;
+      font-size: 1.2rem;
+      font-weight: 700;
+      letter-spacing: -.24px;
+   
+      outline: none;
+      padding: 1rem 1.3rem;
+      quotes: auto;
+      text-align: center;
+      text-decoration: none;
+      transition: all .15s;
+      user-select: none;
+      -webkit-user-select: none;
+      touch-action: manipulation;
+    }
+    
+    .button-73:hover {
+      background-color: #FFC229;
+      box-shadow: #FF6314 0 -6px 8px inset;
+      transform: scale(1.125);
+    }
+    
+    .button-73:active {
+      transform: scale(1.025);
+    }
+    
+    @media (min-width: 768px) {
+      .button-73 {
+        font-size: 1.5rem;
+        padding: .75rem 2rem;
+      }
+     
+    }
+  
+  
+
+  .random-cocktails{
+    margin-top: 10em;
+   height: fit-content;
+   font-family: Suti,Georgia,Times,Times New Roman,serif;
+    font-size: 13px;
+    line-height: 1.2em;
+    letter-spacing: .08em;
+    color: #05097e;
+    text-transform: uppercase;
+   border-bottom: 3px solid #625dd0;
+    position: relative;
+    
+   
+}
+   
+  
