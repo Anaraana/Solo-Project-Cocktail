@@ -8,10 +8,6 @@ function App() {
     <div className="App">
       <BrowserRouter>
         <Routes>
-          {/* <Route path="/" element={<CocktailSearch />}>
-            <Route path="Cocktails" element={<CocktailSearch />} />
-            <Route path=":idDrink" element={<DrinkDetails />} />
-          </Route> */}
           <Route path="/" >
               <Route index element={<CocktailSearch/>}/> 
               {/* <Route path="/drink" element={<Drink/>}/> */}

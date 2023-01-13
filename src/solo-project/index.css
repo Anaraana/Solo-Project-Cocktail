@@ -1,177 +1,178 @@
-
 .cocktails-main-container {
-    /* display: flex; */
-    flex-wrap: wrap;
-    background: #ebebf6;
-    transition: all 0.15s ease-in-out 0s;
-    opacity: 1;
-    overflow: hidden auto;
-    background-repeat: no-repeat;
-    background-size: cover;
-    min-height: 200vh;
-    }
-  .cocktail-container-top {
-    
-    display: flex;
-   
-    background-color: transparent;
-    color: white;
-    text-shadow:gray;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    height: 5em;
-    background: linear-gradient(160deg, #213393 40%, #6eb3e8 60%, #056aee 96%);
-    font-family:Georgia, 'Times New Roman', Times, serif;
-    font-size: 5em;
-    font-weight: 5em;
-    letter-spacing: .07em;
-  }
-  .cocktail-container-buttom {
-    display: flex;
-    flex-wrap: wrap;
-    background-color: #ebebf6;
-    justify-content: center;
-    background-size:contain;
-    height: 200rem;
-    
-  }
-  .header-cocktail-img{
-    
-  }
-  .drink-select-option {
-    width: 80em;
-    height:5em;
-    padding-top: 3em;
-    color:#05097e;
-    justify-content: center;
-    
-    font-family: cursive;
-   
-
-  }
-  .cocktails-small-container {
-    display: flex;
-    flex-wrap: wrap;
-  }
-  .cocktails-details {
-    width: 200px;
-    height: 200px;
-  }
-  .cocktails-image {
-    display: flex;
-    flex-wrap: wrap;
-   
-  }
-  
-  .drink-detail-container {
- 
-  
-    background-color: #ebebf6;
-    justify-content: center;
-    background-size:contain;
-    height: 200rem;
-  }
-  .drink-detail-word{
-    
-    display: flex;
-   
-    background-color: transparent;
-    color: white;
-    text-shadow:gray;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    height: 5em;
-    background: linear-gradient(160deg, #213393 40%, #6eb3e8 60%, #056aee 96%);
-    font-family:Georgia, 'Times New Roman', Times, serif;
-    font-size: 5em;
-    font-weight: 5em;
-    letter-spacing: .07em;
-  }
-  
-  .drink-detail-small-container {
-    border: 5px solid rgb(191, 142, 207);
-    border-radius: 15px;
-    margin-top: 5em;
-    width: 100em;
-    height: 100em;
-    font-family: cursive;
-color: #032d7a;
-background-color:#ebebf6;
-margin-left: 35%;
-
-
-  }
-  
- 
-  Select {
-    color: rgb(174, 198, 17);
-    height: 30em;
-  }
- 
- 
-  .cocktail-button {
-  
-    margin-top: 15em;
-      appearance: none;
-      background-color: #FFFFFF;
-      border-radius: 40em;
-      border-style: none;
-      box-shadow: #625dd0 0 -12px 6px inset;
-      box-sizing: border-box;
-      color: #1c0566;
-      cursor: pointer;
-      display: inline-block;
-      font-family: -apple-system,sans-serif;
-      font-size: 1.2rem;
-      font-weight: 700;
-      letter-spacing: -.24px;
-   
-      outline: none;
-      padding: 1rem 1.3rem;
-      quotes: auto;
-      text-align: center;
-      text-decoration: none;
-      transition: all .15s;
-      user-select: none;
-      -webkit-user-select: none;
-      touch-action: manipulation;
-    }
-    
-    .button-73:hover {
-      background-color: #FFC229;
-      box-shadow: #FF6314 0 -6px 8px inset;
-      transform: scale(1.125);
-    }
-    
-    .button-73:active {
-      transform: scale(1.025);
-    }
-    
-    @media (min-width: 768px) {
-      .button-73 {
-        font-size: 1.5rem;
-        padding: .75rem 2rem;
-      }
-     
-    }
-  
-  
-
-  .random-cocktails{
-    margin-top: 10em;
-   height: fit-content;
-   font-family: Suti,Georgia,Times,Times New Roman,serif;
-    font-size: 13px;
-    line-height: 1.2em;
-    letter-spacing: .08em;
-    color: #05097e;
-    text-transform: uppercase;
-   border-bottom: 3px solid #625dd0;
-    position: relative;
-    
-   
+  /* display: flex; */
+  flex-wrap: wrap;
+  background: #ebebf6;
+  transition: all 0.15s ease-in-out 0s;
+  opacity: 1;
+  overflow: hidden auto;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 200vh;
 }
-   
-  
+.cocktail-container-top {
+  display: flex;
+
+  background-color: transparent;
+  color: white;
+  text-shadow: gray;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 5em;
+  background: linear-gradient(160deg, #213393 40%, #6eb3e8 60%, #056aee 96%);
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 5em;
+  font-weight: 5em;
+  letter-spacing: 0.07em;
+}
+.cocktail-container-buttom {
+  display: flex;
+  flex-wrap: wrap;
+  /* background-color: #ebebf6; */
+  justify-content: center;
+  background-size: contain;
+  height: 200rem;
+}
+.header-cocktail-img {
+}
+.drink-select-option {
+  width: 80em;
+  height: 5em;
+  padding-top: 3em;
+  color: #efeff7;
+  justify-content: center;
+}
+.cocktails-small-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+.cocktails-details {
+  width: 200px;
+  height: 200px;
+}
+.cocktails-image {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.drink-detail-container {
+  display: flex;
+  align-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ebebf6;
+  justify-content: center;
+  background-size: contain;
+  /* height: 200rem; */
+}
+.drink-detail-word {
+  display: flex;
+  background-color: transparent;
+  color: white;
+  text-shadow: gray;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+  min-width: 100%;
+  height: 5em;
+  background: linear-gradient(160deg, #213393 40%, #6eb3e8 60%, #056aee 96%);
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 5em;
+  font-weight: 5em;
+  letter-spacing: 0.07em;
+}
+
+.drink-detail-small-container {
+  box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px,
+    rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px,
+    rgba(240, 46, 170, 0.05) 25px 25px;
+  border-radius: 15px;
+  margin-top: 5em;
+  width: 95em;
+  height: 95em;
+  font-family: cursive;
+  color: #041c49;
+  background-color: #ebebf6;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  align-content: center;
+}
+
+.cocktail-button {
+  margin-top: 20em;
+  appearance: none;
+  background-color: #ffffff;
+  border-radius: 40em;
+  border-style: none;
+  box-shadow: #625dd0 0 -12px 6px inset;
+  box-sizing: border-box;
+  color: #1c0566;
+  cursor: pointer;
+  display: inline-block;
+  font-family: -apple-system, sans-serif;
+  font-size: 1.2rem;
+  font-weight: 700;
+  letter-spacing: -0.24px;
+
+  outline: none;
+  padding: 1rem 1.3rem;
+  quotes: auto;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-73:hover {
+  background-color: #ffc229;
+  box-shadow: #ff6314 0 -6px 8px inset;
+  transform: scale(1.125);
+}
+
+.button-73:active {
+  transform: scale(1.025);
+}
+
+@media (min-width: 768px) {
+  .button-73 {
+    font-size: 1.5rem;
+    padding: 0.75rem 2rem;
+  }
+}
+
+.random-cocktails {
+  height: fit-content;
+  font-family: Suti, Georgia, Times, Times New Roman, serif;
+  font-size: 13px;
+  line-height: 1.2em;
+  letter-spacing: 0.08em;
+  color: #f9f9fc;
+  text-transform: uppercase;
+  border-bottom: 3px solid #625dd0;
+  position: relative;
+  padding-bottom: 3em;
+  padding-top: 15em;
+}
+.css-13cymwt-control {
+  background-color: transparent !important;
+  border: none !important;
+  border-bottom: 1px solid white !important;
+  border-radius: 0 !important;
+}
+.css-1hb7zxy-IndicatorsContainer {
+  display: none !important;
+}
+.find-your-favorite {
+  font-family: cursive;
+}
+.cocktail-party {
+  display: flex;
+  justify-content: center;
+}
+.cocktail-search-select {
+  font-size: 1.7em;
+}

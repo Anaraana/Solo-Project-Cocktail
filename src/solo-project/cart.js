@@ -1,6 +1,14 @@
-import React from 'react';
+import React from "react";
 
 
 
-export default function  FavoriteList (){}
+
+
+
+export default function  FavoriteList (){
+    // const { cart, updateCart } = useContext(CocktailContext);
+    return(
+      <div></div>
+    )
+}
 

@@ -1,23 +1,14 @@
 import Select from "react-select";
 import axios from "axios";
-import React, { useState, useContext } from "react";
-import mojitoImg from "./cocktails-imgs/cocktail1.jpeg";
-import negroniImg from "./cocktails-imgs/cocktail3.jpeg";
-import daiquiriImg from "./cocktails-imgs/cocktail4.jpeg";
-import martiniImg from "./cocktails-imgs/cocktail5.jpeg";
+import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { CocktailContext } from ".";
+// import { CocktailContext } from ".";
 
-const cocktailsImages = [
-  { name: "Mojito", image: mojitoImg },
-  { name: "Negroni", image: negroniImg },
-  { name: "Daiquiri", image: daiquiriImg },
-  { name: "Martini", image: martiniImg },
-];
+
 
 export default function SearchFilter() {
   const [cocktails, setCocktails] = useState([]);
-  const fetchdrinks = useContext(CocktailContext);
+//   const fetchdrinks = useContext(CocktailContext);
   const [input, setInput] = useState("");
   const navigate = useNavigate();
 
@@ -61,7 +52,7 @@ export default function SearchFilter() {
   return (
 
     <div>
-      <Select className="cocktail-search-select"  placeholder='Search Your Cocktail...'
+      <Select style={{color:'red'}} className="cocktail-search-select"  placeholder='Search Your Cocktail...'
         isSearchable={true}
         onChange={(option) => {
           navigate(option.value)
