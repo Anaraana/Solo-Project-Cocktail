@@ -1,15 +1,15 @@
 import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-
-import CocktailSearch from "./solo-project";
 import DrinkDetails from "./solo-project/drink-details";
+import Layout from "./solo-project/layout";
+import Populardrinks from "./solo-project/drink";
 function App() {
   return (
     <div className="App">
       <BrowserRouter>
         <Routes>
-          <Route path="/" >
-              <Route index element={<CocktailSearch/>}/> 
+          <Route path="/" element={<Layout/>} >
+              <Route index element={<Populardrinks/>}/> 
               {/* <Route path="/drink" element={<Drink/>}/> */}
               <Route path=":idDrink" element={<DrinkDetails/>}  />
             </Route>

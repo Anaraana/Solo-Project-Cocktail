@@ -1,5 +1,21 @@
-.cocktails-main-container {
-  /* display: flex; */
+.favorite-drink-container{
+  border: 1px solid black;
+  display: flex;
+  
+  
+
+}
+.drink-detail-container{
+  border: 1px solid orange;
+}
+
+.cocktails-main-container{
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+} 
+ .cocktails-main-container {
+ 
   flex-wrap: wrap;
   background: #ebebf6;
   transition: all 0.15s ease-in-out 0s;
@@ -7,9 +23,19 @@
   overflow: hidden auto;
   background-repeat: no-repeat;
   background-size: cover;
-  min-height: 200vh;
+ 
 }
-.cocktail-container-top {
+.favdrinks{
+  flex-direction: column;
+}
+.loved-drink-container{
+  border: 1px solid orange;
+  text-align: start;
+  margin-left: 50%;
+  width: 400px;
+ 
+}
+/*.cocktail-container-top {
   display: flex;
 
   background-color: transparent;
@@ -28,7 +54,7 @@
 .cocktail-container-buttom {
   display: flex;
   flex-wrap: wrap;
-  /* background-color: #ebebf6; */
+ 
   justify-content: center;
   background-size: contain;
   height: 200rem;
@@ -63,7 +89,7 @@
   background-color: #ebebf6;
   justify-content: center;
   background-size: contain;
-  /* height: 200rem; */
+
 }
 .drink-detail-word {
   display: flex;
@@ -73,13 +99,13 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  max-width: 100%;
+  min-width: 100%;
   min-width: 100%;
   height: 5em;
   background: linear-gradient(160deg, #213393 40%, #6eb3e8 60%, #056aee 96%);
   font-family: Georgia, "Times New Roman", Times, serif;
-  font-size: 5em;
-  font-weight: 5em;
+  font-size: 30em;
+  font-weight: 30em;
   letter-spacing: 0.07em;
 }
 
@@ -101,10 +127,10 @@
 }
 
 .cocktail-button {
-  margin-top: 20em;
+  
   appearance: none;
   background-color: #ffffff;
-  border-radius: 40em;
+  
   border-style: none;
   box-shadow: #625dd0 0 -12px 6px inset;
   box-sizing: border-box;
@@ -112,8 +138,7 @@
   cursor: pointer;
   display: inline-block;
   font-family: -apple-system, sans-serif;
-  font-size: 1.2rem;
-  font-weight: 700;
+  
   letter-spacing: -0.24px;
 
   outline: none;
@@ -175,4 +200,4 @@
 }
 .cocktail-search-select {
   font-size: 1.7em;
-}
+} */

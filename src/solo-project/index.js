@@ -1,47 +1,72 @@
-import React, { createContext, useState } from "react";
+import React, { createContext, useState,useReducer } from "react";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import "./index.css";
 import Header from "./header";
 import SearchFilter from "./search-filter";
 import Populardrinks from "./drink";
-import HeartSvg from "./cart"
-import FavoriteList from "./cart";
+import HeartSvg from "./favorite"
+import FavoriteList from "./favorite";
 
 
 
-
-export const CocktailContext = createContext();
+// const reducerDrinks = (currState, action) => {
+//     switch (action.type) {
+//       case "addToFavourite":
+//         return {
+//           channels: [...currState.drink, action.data],
+//           channelIds: [...currState.idDrink, action.data.idDrink],
+//         };
+//       case "RemoveFromFavourite":
+//         return {
+//           channels: currState.drinks.filter(
+//             (drink) => drink.idDrink !== action.data.idDrink
+//           ),
+//           idDrink: currState.idDrink.filter(
+//             (id) => id !== action.data.idDrink
+//           ),
+//         };
+//       default:
+//         window.alert("error!");
+//     }
+//   };
+// export const CocktailContext = createContext();
 
 export default function CocktailSearch() {
   const [search, setSearch] = useState([]);
+  
+    
   const navigate = useNavigate();
 //   const [cart, updateCart]=useReducer (reducer, {
 //     totalQty:0,
 //     totalItemList:[]
 //   });
-console.log(search)
-  const fetchdrinks = (cocktailsName) => {
-    console.log(cocktailsName); //neree olood darhad api duudaj bga
-    axios
-      .get(
-        `https://www.thecocktaildb.com/api/json/v1/1/search.php?s=${cocktailsName}`
-      )
-      .then((res) => {
-        // setCocktails(res.data.drinks);
-        setSearch(res.data.drinks);
-        // navigate(`${res.data.drinks[0].idDrink}`)
-        navigate(`${res.data.drinks[0].idDrink}`);
-        console.log(res.data.drinks[0].idDrink);
-      })
-      .catch((err) => {
-        console.log(err);
-      })
-      .finally(() => {});
-  };
+// console.log(search)
+
+
+//   const fetchdrinks = (cocktailsName) => {
+//     console.log(cocktailsName); //neree olood darhad api duudaj bga
+//     axios
+//       .get(
+//         `https://www.thecocktaildb.com/api/json/v1/1/search.php?s=${cocktailsName}`
+//       )
+//       .then((res) => {
+//         // setCocktails(res.data.drinks);
+//         setSearch(res.data.drinks);
+//         // navigate(`${res.data.drinks[0].idDrink}`)
+//         navigate(`${res.data.drinks[0].idDrink}`);
+//         console.log(res.data.drinks[0].idDrink);
+//       })
+//       .catch((err) => {
+//         console.log(err);
+//       })
+//       .finally(() => {});
+//   };
+
   return (
     <div className="cocktails-main-container"
-    style={{opacity:'1px',backgroundImage:'url(https://everydaypower.com/wp-content/uploads/2021/05/50-Star-Quotes-About-the-Beauty-of-the-Night-Sky.jpg)' }}>
+    // style={{opacity:'1px',backgroundImage:'url(https://everydaypower.com/wp-content/uploads/2021/05/50-Star-Quotes-About-the-Beauty-of-the-Night-Sky.jpg)' }}
+    >
    
       <div className="cocktail-container-top">
         <Header />
@@ -52,13 +77,13 @@ console.log(search)
         <div className="drink-select-option"
          
         >
-          <CocktailContext.Provider
+          {/* <CocktailContext.Provider
             value={{
               fetchdrinks,}} >
             <SearchFilter />
             <Populardrinks />
             <FavoriteList/>
-          </CocktailContext.Provider>
+          </CocktailContext.Provider> */}
         </div>
         <div className="random-cocktails">
           <h1>RANDOM COCKTAILS</h1>
