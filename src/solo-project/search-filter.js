@@ -52,7 +52,7 @@ export default function SearchFilter() {
   return (
 
     <div>
-      <Select style={{color:'red'}} className="cocktail-search-select"  placeholder='Search Your Cocktail...'
+      <Select style={{color:'red'}} className="cocktail-search-select"  placeholder='Search Your Cocktail Here...'
         isSearchable={true}
         onChange={(option) => {
           navigate(option.value)

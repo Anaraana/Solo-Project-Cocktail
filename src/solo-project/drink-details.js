@@ -31,27 +31,16 @@ export default function DrinkDetails() {
   console.log(drink,"IDDRINK");
 
   return (
-    <div className="drink-detail-container" 
+    <div 
     //  style={{backgroundImage:'url(https://everydaypower.com/wp-content/uploads/2021/05/50-Star-Quotes-About-the-Beauty-of-the-Night-Sky.jpg)'}}
      >
-         <span
-          onClick={()=>{
-        //{drinks:,idrinks:[id1,id,id2]}
-       updateFavoriteDrinks({type: favoriteDrinks?.idDrink.includes(drink[0].idDrink) 
-        ? "removeFromFavorite" :'addToFavorite',
-       data:{idDrink:drink[0].idDrink, strDrink:drink[0].strDrink}});
-      }}
-        > 
-        {favoriteDrinks.idDrink.includes(idDrink) ? <MdFavorite color="red" size={25}/>
-     : <MdFavoriteBorder size={25}/>
-        }
- </span>
+       
      
         <h1 className="drink-detail-word">DRINK DETAILS</h1>
      
       <div className="drink-detail-small-container">
         
-        <img style={{width:'5em', height:'5em',marginTop:'30px',borderRadius:'15px',boxShadow:'rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px'}}src={drink[0]?.strDrinkThumb} alt='img'/>
+        <img style={{width:'10em', height:'10em',marginTop:'30px',borderRadius:'15px',boxShadow:'rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px'}}src={drink[0]?.strDrinkThumb} alt='img'/>
        
         <div>
           <h1>{drink[0]?.strDrink}</h1>
@@ -86,6 +75,18 @@ export default function DrinkDetails() {
             {drink[0]?.strVideo}
           </a></h4>
         </div>
+        <span
+          onClick={()=>{
+        //{drinks:,idrinks:[id1,id,id2]}
+       updateFavoriteDrinks({type: favoriteDrinks?.idDrink.includes(drink[0].idDrink) 
+        ? "removeFromFavorite" :'addToFavorite',
+       data:{idDrink:drink[0].idDrink, strDrink:drink[0].strDrink}});
+      }}
+        > 
+        {favoriteDrinks.idDrink.includes(idDrink) ? <MdFavorite color="red" size={25}/>
+     : <MdFavoriteBorder size={25}/>
+        }
+ </span>
       </div>
     </div>
   );

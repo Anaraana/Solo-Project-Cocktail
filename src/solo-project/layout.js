@@ -52,22 +52,23 @@ export default function Layout (){
         >
         <div className="cocktail-container-top">
             <Header/>
-        <div>
-            <div className="'drink-select-option">
-        <CocktailContext.Provider value={{ favoriteDrinks,updateFavoriteDrinks,popular,setPopular }}>
+        </div>
+        
+            <div className="'drink-select-option"></div>
+        <CocktailContext.Provider className='cocktail-provider' value={{ favoriteDrinks,updateFavoriteDrinks,popular,setPopular }}>
             <SearchFilter/>
        <div className='favorite-drink-container'>
-        <Outlet className='outlet'/>
-       <FavDrinks className='favdrinks'/>
+       <div><Outlet className='outlet'/></div>
+       <div><FavDrinks className='favdrinks'/></div>
        </div>
        
       </CocktailContext.Provider>
       <div className="random-cocktails">
-          <h1>RANDOM COCKTAILS</h1>
+       
         </div>
-      </div>
-      </div>
-      </div>
+      
+      
+     
       </div>
     )
 }

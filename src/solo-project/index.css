@@ -1,18 +1,22 @@
 .favorite-drink-container{
-  border: 1px solid black;
+
   display: flex;
-  
-  
+  margin-top: 3rem;
+  justify-content: space-around;
+  }
+
+.favorite-drink-name{
+  font-size: large;
+  margin-top: 20px;
 
 }
-.drink-detail-container{
-  border: 1px solid orange;
-}
+
 
 .cocktails-main-container{
-  display: flex;
+  /* display: flex; */
   justify-content: center;
   flex-direction: row;
+  padding: 20px;
 } 
  .cocktails-main-container {
  
@@ -29,14 +33,24 @@
   flex-direction: column;
 }
 .loved-drink-container{
-  border: 1px solid orange;
-  text-align: start;
-  margin-left: 50%;
-  width: 400px;
+  box-shadow: rgba(13, 13, 199, 0.25) 0px 50px 100px -20px, rgba(209, 1, 1, 0.3) 0px 30px 60px -30px, rgba(48, 134, 221, 0.35) 0px -2px 6px 0px inset;
+ width: 300px;
+ 
+
  
 }
-/*.cocktail-container-top {
-  display: flex;
+.hover{
+  cursor: pointer;
+}
+.hover:hover{
+  border-bottom: 1px solid black;
+}
+.cocktail-container-top {
+  /* display: flex; */
+  flex-direction: column;
+  justify-content: center;
+  
+ 
 
   background-color: transparent;
   color: white;
@@ -44,14 +58,16 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  height: 5em;
+  height: 12em;
   background: linear-gradient(160deg, #213393 40%, #6eb3e8 60%, #056aee 96%);
   font-family: Georgia, "Times New Roman", Times, serif;
-  font-size: 5em;
-  font-weight: 5em;
+  font-size: 1em;
+  font-weight: 1em;
   letter-spacing: 0.07em;
 }
-.cocktail-container-buttom {
+
+
+/* .cocktail-container-buttom {
   display: flex;
   flex-wrap: wrap;
  
@@ -108,15 +124,13 @@
   font-weight: 30em;
   letter-spacing: 0.07em;
 }
-
+*/
 .drink-detail-small-container {
-  box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px,
+  /* box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px,
     rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px,
-    rgba(240, 46, 170, 0.05) 25px 25px;
+    rgba(240, 46, 170, 0.05) 25px 25px; */
   border-radius: 15px;
-  margin-top: 5em;
-  width: 95em;
-  height: 95em;
+ width: 800px;
   font-family: cursive;
   color: #041c49;
   background-color: #ebebf6;
@@ -124,23 +138,23 @@
   justify-items: center;
   align-items: center;
   align-content: center;
-}
+
+  box-shadow: rgba(61, 106, 229, 0.4) 0px 0px 0px 3px, rgba(106, 177, 240, 0.3) 0px 0px 0px 6px, rgb(235, 154, 196) 0px 0px 0px 9px, rgb(245, 215, 233) 0px 0px 0px 12px, rgb(247, 245, 245) 0px 0px 0px 15px;
+} 
 
 .cocktail-button {
   
   appearance: none;
   background-color: #ffffff;
-  
   border-style: none;
+  border-radius: 15px;
   box-shadow: #625dd0 0 -12px 6px inset;
   box-sizing: border-box;
   color: #1c0566;
   cursor: pointer;
   display: inline-block;
   font-family: -apple-system, sans-serif;
-  
   letter-spacing: -0.24px;
-
   outline: none;
   padding: 1rem 1.3rem;
   quotes: auto;
@@ -200,4 +214,5 @@
 }
 .cocktail-search-select {
   font-size: 1.7em;
-} */
+  margin-top: 40px;
+} 

@@ -1,4 +1,4 @@
-import {} from "antd";
+import {Avatar, List} from "antd";
 import { useContext, useState } from "react";
 import { MdFavorite, MdFavoriteBorder } from "react-icons/md";
 import { useNavigate } from "react-router-dom";
@@ -23,15 +23,22 @@ export default function FavDrinks() {
     setIsModalOpen(false);
   };
   return (
-    <div className="loved-drink-container">
+    
+      <div>
+        <div className="favorite-drink-name"><b>Favorite Drink</b></div>
+    <div className="loved-drink-container"> 
+   
       {favoriteDrinks.drinks.length > 0
         ? favoriteDrinks.drinks?.map((drink, id) => {
             console.log(drink, "DIIRNK");
             return (
               <div   key={id}>
-                <span>{drink.strDrink}</span>
+                <span className="hover"
+                onClick={()=>{
+                  navigate(`${drink.idDrink}`)
+                }}>{drink.strDrink}</span>
 
-                <span
+                <span 
                   onClick={() => {
                     updateFavoriteDrinks({
                       type: favoriteDrinks?.idDrink.includes(drink.idDrink)
@@ -55,6 +62,8 @@ export default function FavDrinks() {
           })
         : "Please Add Your First Favorite Drink"}
     </div>
+    </div>
+   
   );
 }
 

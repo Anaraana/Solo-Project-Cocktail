@@ -38,7 +38,7 @@ export default function Populardrinks(cocktailsName) {
   }
 
   return (
-    <div>
+    <div className="random-cocktail-container">
       {popular.map((drink, idx) => {
         return (
           <div key={idx}>
